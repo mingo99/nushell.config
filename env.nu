@@ -89,5 +89,5 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # load user env
-source ./user/dir.nu
-[ -s ./user/env.nu ] ; source ./user/env.nu
+source ~/.config/nushell/user/dir.nu
+[ -s ~/.config/nushell/user/env.nu ] ; source ~/.config/nushell/user/env.nu

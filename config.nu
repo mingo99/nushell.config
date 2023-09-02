@@ -768,5 +768,5 @@ $env.config = {
 }
 
 # add custom configuration
-source ./completion/init.nu
-source ./hooks/init.nu
+source ~/.config/nushell/completion/init.nu
+source ~/.config/nushell/hooks/init.nu
