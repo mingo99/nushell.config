@@ -59,9 +59,9 @@ $env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
 $env.PROMPT_INDICATOR = {|| " > " }
-$env.PROMPT_INDICATOR_VI_INSERT = {|| " : " }
-$env.PROMPT_INDICATOR_VI_NORMAL = {|| " > " }
-$env.PROMPT_MULTILINE_INDICATOR = {|| " ::: " }
+$env.PROMPT_INDICATOR_VI_INSERT = {|| ": " }
+$env.PROMPT_INDICATOR_VI_NORMAL = {|| "> " }
+$env.PROMPT_MULTILINE_INDICATOR = {|| "::: " }
 
 # Specifies how environment variables are:
 # - converted from a string to a value on Nushell startup (from_string)
@@ -88,6 +88,12 @@ $env.NU_PLUGIN_DIRS = [
     # ($nu.default-config-dir | path join 'plugins') # add <nushell-config-dir>/plugins
 ]
 
+# nvcc
+# $env.PATH = ($env.PATH | prepend '/usr/local/cuda/bin')
+$env.LD_LIBRARY_PATH = /usr/local/cuda/lib64
+
 # load user env
-source ~/.config/nushell/user/dir.nu
-[ -s ~/.config/nushell/user/env.nu ] ; source ~/.config/nushell/user/env.nu
+source ~/.config/nushell/user/aliases.nu
+source ~/.config/nushell/user/fzf.nu
+source ~/.config/nushell/user/synopsys.nu
+source ~/.config/nushell/user/vivado.nu
