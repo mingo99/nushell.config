@@ -95,5 +95,6 @@ $env.LD_LIBRARY_PATH = /usr/local/cuda/lib64
 # load user env
 source ~/.config/nushell/user/aliases.nu
 source ~/.config/nushell/user/fzf.nu
+source ~/.config/nushell/user/proxy.nu
 source ~/.config/nushell/user/synopsys.nu
 source ~/.config/nushell/user/vivado.nu
