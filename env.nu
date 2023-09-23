@@ -93,10 +93,11 @@ $env.NU_PLUGIN_DIRS = [
 # load user env
 const OMEN_CONFIG = "~/.config/nushell/user/omen/init.nu"
 const LEGION_CONFIG = "~/.config/nushell/user/legion/init.nu"
+source $OMEN_CONFIG 
 
-let name = hostname
-if $name == "OMEN" {
-    source $OMEN_CONFIG
-} else {
-    source $LEGION_CONFIG
-}
+# let curr_name = hostname
+# const if $curr_name == "OMEN" {
+    # source $OMEN_CONFIG 
+# } else {
+    # source $LEGION_CONFIG
+# }
