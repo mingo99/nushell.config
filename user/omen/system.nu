@@ -17,9 +17,6 @@ $env.PATH = ($env.PATH | append '/mnt/c/Program Files (x86)/Microsoft/Edge/Appli
 # $env.PATH = ($env.PATH | prepend '/usr/local/cuda/bin')
 $env.LD_LIBRARY_PATH = /usr/local/cuda/lib63
 
-# homebrew
-$env.PATH = ($env.PATH | append '/home/linuxbrew/.linuxbrew/bin')
-
 # cargo
 $env.PATH = ($env.PATH | append '/home/mingo/.cargo/bin')
 
