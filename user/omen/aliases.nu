@@ -7,3 +7,4 @@ alias rd = rmdir
 
 alias jso = joshuto
 alias lg = lazygit
+alias bat = batcat
