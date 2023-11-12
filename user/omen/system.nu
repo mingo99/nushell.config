@@ -10,6 +10,7 @@ $env.https_proxy = $"http://($env.HOSTIP):($port)"
 
 # windows path
 $env.PATH = ($env.PATH | append '/mnt/c/Windows')
+$env.PATH = ($env.PATH | append '/mnt/c/Windows/System32')
 $env.PATH = ($env.PATH | append '/mnt/c/MyProgram/VScode/bin')
 $env.PATH = ($env.PATH | append '/mnt/c/Program Files (x86)/Microsoft/Edge/Application')
 
