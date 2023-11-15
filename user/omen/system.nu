@@ -1,5 +1,3 @@
-# Set DNS
-echo "nameserver 114.114.114.114\nnameserver 8.8.8.8" | save -f /etc/resolv.conf
 # Set proxy 
 $env.HOSTIP = "192.168.110.231"
 let port = "7890"
@@ -9,10 +7,10 @@ $env.http_proxy = $"http://($env.HOSTIP):($port)"
 $env.https_proxy = $"http://($env.HOSTIP):($port)"
 
 # windows path
-$env.PATH = ($env.PATH | append '/mnt/c/Windows')
-$env.PATH = ($env.PATH | append '/mnt/c/Windows/System32')
-$env.PATH = ($env.PATH | append '/mnt/c/MyProgram/VScode/bin')
-$env.PATH = ($env.PATH | append '/mnt/c/Program Files (x86)/Microsoft/Edge/Application')
+$env.PATH = ($env.PATH | prepend '/mnt/c/Windows')
+$env.PATH = ($env.PATH | prepend '/mnt/c/Windows/System32')
+$env.PATH = ($env.PATH | prepend '/mnt/c/MyProgram/VScode/bin')
+$env.PATH = ($env.PATH | prepend '/mnt/c/Program Files (x86)/Microsoft/Edge/Application')
 
 # nvcc
 # $env.PATH = ($env.PATH | prepend '/usr/local/cuda/bin')
