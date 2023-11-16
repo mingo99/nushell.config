@@ -89,4 +89,4 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # load user env
-source ~/.config/nushell/user/omen/init.nu
+source ~/.config/nushell/user/init.nu

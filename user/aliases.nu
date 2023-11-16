@@ -8,4 +8,3 @@ alias rd = rmdir
 alias cat = bat
 alias jso = joshuto
 alias lg = lazygit
-alias yi = yazi
