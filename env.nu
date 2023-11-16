@@ -80,24 +80,13 @@ $env.ENV_CONVERSIONS = {
 
 # Directories to search for scripts when calling source or use
 $env.NU_LIB_DIRS = [
-    # ($nu.default-config-dir | path join 'scripts') # add <nushell-config-dir>/scripts
+    # ($nu.default-config-dir | path oin 'scripts') # add <nushell-config-dir>/scripts
 ]
 
 # Directories to search for plugin binaries when calling register
 $env.NU_PLUGIN_DIRS = [
-    # ($nu.default-config-dir | path join 'plugins') # add <nushell-config-dir>/plugins
+    # ($nu.default-config-dir | path oin 'plugins') # add <nushell-config-dir>/plugins
 ]
 
-
-
 # load user env
-const OMEN_CONFIG = "~/.config/nushell/user/omen/init.nu"
-const LEGION_CONFIG = "~/.config/nushell/user/legion/init.nu"
-source $OMEN_CONFIG 
-
-# let curr_name = hostname
-# const if $curr_name == "OMEN" {
-    # source $OMEN_CONFIG 
-# } else {
-    # source $LEGION_CONFIG
-# }
+source ~/.config/nushell/user/omen/init.nu
