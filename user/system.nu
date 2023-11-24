@@ -13,3 +13,6 @@ $env.PATH = ($env.PATH | append '/home/mingo/.cargo/bin')
 
 # fuzzy finder
 $env.FZF_DEFAULT_COMMAND = 'rg --hidden -l ""'
+
+# pfetch
+$env.PF_ASCII = "linux"
