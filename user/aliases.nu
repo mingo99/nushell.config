@@ -1,7 +1,7 @@
 alias ps = procs
 
 # directories
-alias ls = exa
+alias ls = exa --icons
 alias ll = ls -l
 alias la = ls -a
 alias lla = ls -la
