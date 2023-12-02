@@ -22,8 +22,10 @@ alias pt = primetime
 
 #Scl
 $env.LM_LICENSE_FILE = 27000@OMEN
-$env.SCL_HOME = /eda/scl/11.9
-$env.PATH = ($env.PATH | append '/eda/scl/11.9/amd64/bin')
+# $env.SCL_HOME = /eda/scl/11.9
+# $env.PATH = ($env.PATH | append '/eda/scl/11.9/amd64/bin')
+$env.SCL_HOME = /eda/scl/2018.06
+$env.PATH = ($env.PATH | append '/eda/scl/2018.06/linux64/bin')
 alias lmg_scl = lmgrd -c /eda/scl/Synopsys.dat
 
 # vivado vitis vitis_hls

@@ -1,6 +1,6 @@
 # Nushell Environment Config File
 #
-# version = "0.84.0"
+# version = "0.87.1"
 
 export-env {
     load-env {
@@ -90,3 +90,6 @@ $env.NU_PLUGIN_DIRS = [
 
 # load user env
 source ~/.config/nushell/user/init.nu
+
+# set ls colors
+$env.LS_COLORS = (vivid generate ~/.config/vivid/my_theme.yml)

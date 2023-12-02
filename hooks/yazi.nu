@@ -1,4 +1,4 @@
-def-env ya [] {
+def --env ya [] {
 	let tmp = (mktemp -t "yazi-cwd.XXXXX")
 	yazi --cwd-file $tmp
 	let cwd = (cat -- $tmp)
