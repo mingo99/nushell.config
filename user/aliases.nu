@@ -1,7 +1,7 @@
 alias ps = procs
 
 # directories
-# alias ls = lsd
+alias ls = lsd
 alias ll = ls -l
 alias la = ls -a
 alias lla = ls -la
@@ -15,4 +15,4 @@ alias p = pfetch
 alias cat = bat
 alias jso = joshuto
 alias lg = lazygit
-alias fzf = fzf --preview 'bat --color=always {}' --preview-window '~3'
+alias f = fzf --preview 'bat --color=always {}' --preview-window '~3'
