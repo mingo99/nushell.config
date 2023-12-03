@@ -12,7 +12,6 @@ alias rd = rmdir
 alias t = tmux
 alias p = pfetch
 
-alias cat = bat
+alias cat = bat -pp
 alias jso = joshuto
 alias lg = lazygit
-alias f = fzf --preview 'bat --color=always {}' --preview-window '~3'

@@ -13,6 +13,10 @@ $env.PATH = ($env.PATH | append '/home/mingo/.cargo/bin')
 
 # fuzzy finder
 $env.FZF_DEFAULT_COMMAND = 'rg --hidden -l ""'
+$env.FZF_DEFAULT_OPTS = "--layout=reverse --border --ansi --cycle --preview 'bat --color=always {}' --preview-window='~3'"
 
 # pfetch
 $env.PF_ASCII = "linux"
+
+# Term
+$env.TERM = "screen-256color"
