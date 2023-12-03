@@ -1,5 +1,7 @@
 alias ps = procs
 
+alias t = tmux -u
+
 # directories
 alias ls = lsd
 alias ll = ls -l
